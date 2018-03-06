@@ -1,17 +1,17 @@
 language: python
+
 python:
-  - "2.6"
+
   - "2.7"
-  - "3.4"
-  - "3.5"
-  - "3.6"
-  # PyPy versions
-  - "pypy2.7"
-  - "pypy3.5"
 
-#install dependencies
 install:
-	-pip install unittest2
+  - pip install codecov
+  - pip install coverage
 
-# command to run tests
-script: python helloworld.py
+
+script: 
+  - python sample.py
+  - coverage run sample.py
+
+after_success:
+  - codecov --token=fede63c3-2737-437f-b30e-48d08381ab70
