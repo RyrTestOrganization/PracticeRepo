@@ -10,8 +10,8 @@ install:
 
 
 script: 
-  - python sample.py
-  - coverage run sample.py
+  - python helloworld.py
+  - coverage run helloworld.py
 
 after_success:
   - codecov --token=fede63c3-2737-437f-b30e-48d08381ab70
