@@ -17,4 +17,4 @@ deploy:
   bucket: rytest2.com
   acl: public_read
   localdir:
-  region:ca-central-1
+  region: ca-central-1
